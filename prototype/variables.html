@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>StatsProc - Prototype</title>
+
+    <meta name="description" content="Source code generated using layoutit.com">
+    <meta name="author" content="LayoutIt!">
+
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tether.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script src="js/popper.min.js"></script>  
+    <script src="js/tether.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>   
+    <script>
+        $( document ).ready(function() {
+            $('[data-toggle="tooltip"]').tooltip();
+            $('#colunas').DataTable(); 
+        })
+    </script>    
+
+  </head>
+  <body>
+    <div class="container-fluid">
+	<div class="row">
+		<div class="col-md-2">
+            <img src="images/logo4cmcolor.png">
+		</div>
+		<div class="col-md-9">
+			<ul class="nav nav-pills">
+				<li class="nav-item">
+					<a class="nav-link" href="index.html">Session</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link " href="#">Dataset</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link active" href="variables.html">Variable</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="commands.html">Command</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link disabled" href="#">Help</a>
+				</li>
+
+			</ul>
+        </div>
+        <div class="col-md-1">
+            <img src="images/user.png">
+        </div>
+	</div>
+	<div class="row">
+		<div class="col-md-2">
+			<div class="list-group">
+				<div class="list-group-item">
+					<h4 class="list-group-item-heading">
+						ds_filtrado
+					</h4>
+					<p class="list-group-item-text">
+						17Oct2018 11:07
+					</p>
+                </div>
+				<div class="list-group-item active">
+                        <h4 class="list-group-item-heading">
+                            dstrab
+                        </h4>
+                        <p class="list-group-item-text">
+                            17ct2018 11:17
+                        </p>
+                </div>
+				<div class="list-group-item">
+                        <h4 class="list-group-item-heading">
+                            new dataset1
+                        </h4>
+                        <p class="list-group-item-text">
+                            17ct2018 11:13
+                        </p>
+                </div>                    
+			</div>
+		</div>
+		<div class="col-md-10">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <span>Lines: <span class="font-weight-bold">547</span></span>
+                        </div>
+                        <div class="col-md-2">
+                            <span>Columns: <span class="font-weight-bold">5</span></span>
+                        </div>
+                        <div class="col-md-2">
+                            <span>Label col.: <span class="font-weight-bold">"approved"</span></span>
+                        </div>
+                        <div class="col-md-4">
+                                <span>Space (max 100MB)</span>
+                                <div class="progress">
+                                        <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 10%"   aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">10000</div>
+                                </div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                            <table id="colunas" class="display" style="width:100%">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Type</th>
+                                            <th>Average</th>
+                                            <th>Min</th>
+                                            <th>Max</th>
+                                            <th>Std dev</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>approved - <strong>label</strong></td>
+                                            <td>catetory</td>
+                                            <td>N/A</td>
+                                            <td>N/A</td>
+                                            <td>N/A</td>
+                                            <td>N/A</td>
+                                        </tr>                        
+                                        <tr>
+                                            <td>absences</td>
+                                            <td>Number</td>
+                                            <td>13,50</td>
+                                            <td>0</td>
+                                            <td>20</td>
+                                            <td>5,34</td>
+                                        </tr>                        
+                                        <tr>
+                                            <td>avg_grade</td>
+                                            <td>Number</td>
+                                            <td>35,56</td>
+                                            <td>0,00</td>
+                                            <td>100,00</td>
+                                            <td>18,18</td>
+                                        </tr>                        
+                                        <tr>
+                                            <td>disapprovals</td>
+                                            <td>Number</td>
+                                            <td>3,4</td>
+                                            <td>0,00</td>
+                                            <td>12</td>
+                                            <td>4,7</td>
+                                        </tr>                        
+                                        <tr>
+                                            <td>arrears</td>
+                                            <td>Number</td>
+                                            <td>5,14</td>
+                                            <td>0,00</td>
+                                            <td>10</td>
+                                            <td>6,2</td>
+                                        </tr>                        
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Type</th>
+                                            <th>Average</th>
+                                            <th>Min</th>
+                                            <th>Max</th>
+                                            <th>Std dev</th>
+                                        </tr>
+                                    </tfoot>
+                            </table>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2 style="text-align: center">Controls</h2>
+                        </div>
+                    </div>
+                    <!-- activate, delete, download zip, export, share, reset -->
+                    <div class="row">
+                        <div class="col-md-2">
+                            <button type="button" class="btn btn-primary" data-toggle="tooltip"  title="Load a new Dataset; Or filter/transform the current">New</button>
+                        </div>
+                        <div class="col-md-2">
+                            <button type="button" class="btn btn-danger" data-toggle="tooltip"  title="Delete the Dataset">Delete</button>
+                        </div>
+                        <div class="col-md-2">
+                            <button type="button" class="btn btn-success" data-toggle="tooltip"  title="Download the Dataset as a zip file" >Download zip</button>
+                        </div>
+                        <div class="col-md-2">
+                            <button type="button" class="btn btn-success" data-toggle="tooltip" title="List top 10% lines" >Head</button>
+                        </div>
+                        <div class="col-md-2">
+                            <button type="button" class="btn btn-success" data-toggle="tooltip" title="List bottom 10% lines" >Tail</button>
+                        </div>
+                        <div class="col-md-2">
+                                <button type="button" class="btn btn-warning" data-toggle="tooltip"  title="Browse / Search lines" >Browse</button>
+                        </div>
+                                            
+                    </div>
+                </div>
+        </div>
+	</div>
+</div>
+
+
+  </body>
+</html>

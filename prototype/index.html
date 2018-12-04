@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>StatsProc - Prototype</title>
+
+    <meta name="description" content="Source code generated using layoutit.com">
+    <meta name="author" content="LayoutIt!">
+
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tether.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>  
+    <script src="js/tether.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>   
+    <script>
+        $( document ).ready(function() {
+            $('[data-toggle="tooltip"]').tooltip(); 
+        })
+    </script>    j
+
+  </head>
+  <body>
+    <div class="container-fluid">
+	<div class="row">
+		<div class="col-md-2">
+            <img src="images/logo4cmcolor.png">
+		</div>
+		<div class="col-md-9">
+			<ul class="nav nav-pills">
+				<li class="nav-item">
+					<a class="nav-link active" href="index.html">Session</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="datasets.html">Dataset</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="variables.html">Variable</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="commands.html">Command</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link disabled" href="#">Help</a>
+				</li>
+
+			</ul>
+        </div>
+        <div class="col-md-1">
+            <img src="images/user.png">
+        </div>
+	</div>
+	<div class="row">
+		<div class="col-md-2">
+			<div class="list-group">
+				<div class="list-group-item active">
+					<h4 class="list-group-item-heading">
+						Unnamed#1
+					</h4>
+					<p class="list-group-item-text">
+						17Oct2018 11:07
+					</p>
+                </div>
+				<div class="list-group-item">
+                        <h4 class="list-group-item-heading">
+                            My test
+                        </h4>
+                        <p class="list-group-item-text">
+                            5Oct2018 09:07
+                        </p>
+                </div>
+                    
+			</div>
+		</div>
+		<div class="col-md-10">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <span>Status: <span class="font-weight-bold">Active</span></span>
+                        </div>
+                        <div class="col-md-4">
+                            <span>Since: <span class="font-weight-bold">17 October 2018, 11:07</span></span>
+                        </div>
+                        <div class="col-md-2">
+                            <span>Shared: <span class="font-weight-bold">No</span></span>
+                        </div>
+                        <div class="col-md-2">
+                            <button type="button" class="btn btn-info" data-toggle="tooltip" data-placement="bottom" title="Give your session a meaningful name" >Rename</button>
+                        </div>
+
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <span>Datasets (max 10)</span>
+                            <div class="progress">
+                                    <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 33%" aria-valuenow="3" aria-valuemin="0" aria-valuemax="10">3</div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                                <span>Variables (max 22)</span>
+                                <div class="progress">
+                                        <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 54%"  aria-valuenow="12" aria-valuemin="0" aria-valuemax="22">12</div>
+                                </div>
+                        </div>
+                        <div class="col-md-3">
+                                <span>Commands (max 30)</span>
+                                <div class="progress">
+                                        <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%"  aria-valuenow="15" aria-valuemin="0" aria-valuemax="30">15</div>
+                                </div>
+                        </div>
+                        <div class="col-md-3">
+                                <span>Space (max 100MB)</span>
+                                <div class="progress">
+                                        <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 60%"   aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60</div>
+                                </div>
+                        </div>
+
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2 style="text-align: center">Controls</h2>
+                        </div>
+                    </div>
+                    <!-- activate, delete, download zip, export, share, reset -->
+                    <div class="row">
+                        <div class="col-md-2">
+                            <button type="button" class="btn btn-primary" disabled data-toggle="tooltip" data-placement="bottom" title="Activate a session (will deactivate others)">Activate</button>
+                        </div>
+                        <div class="col-md-2">
+                            <button type="button" class="btn btn-danger" data-toggle="tooltip" data-placement="bottom" title="Delete the session and all resources">Delete</button>
+                        </div>
+                        <div class="col-md-2">
+                            <button type="button" class="btn btn-success" data-toggle="tooltip" data-placement="bottom" title="Download a zip file with all session's resources" >Download zip</button>
+                        </div>
+                        <div class="col-md-2">
+                            <button type="button" class="btn btn-success" data-toggle="tooltip" data-placement="bottom" title="Export resources to Python script / IPython notebook" >export</button>
+                        </div>
+                        <div class="col-md-2">
+                            <button type="button" class="btn btn-info" data-toggle="tooltip" data-placement="bottom" title="Allow other user to see / edit your session" >Share</button>
+                        </div>
+                        <div class="col-md-2">
+                                <button type="button" class="btn btn-warning" data-toggle="tooltip" data-placement="bottom" title="Reset and recalculate all elements" >Reset</button>
+                        </div>
+                                            
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-md-12" style="text-align: center">
+                            <div class="alert alert-info" role="alert">
+                                Session auto-saved.
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                    </div>
+                </div>
+        </div>
+	</div>
+</div>
+
+
+  </body>
+</html>
